@@ -1,0 +1,37 @@
+.conten h1 {
+  font-size: 100px;
+}
+h1.text span {
+  font-size: 95px;
+}
+.conten p {
+  width: 40%;
+}
+
+@media only screen and (max-width: 400px) {
+  h1.text {
+    font-size: 45px;
+    margin-top: 75%;
+  }
+
+  h1.text span {
+    font-size: 60px;
+    line-height: 60%;
+    letter-spacing: -3px;
+  }
+
+  .conten p {
+    width: 80%;
+  }
+  p.copy {
+    padding: 5%;
+    text-align: center;
+  }
+}
+.h {
+  z-index: 0;
+  width: 100%;
+  top: 20%;
+  left: 2.5%;
+  position: absolute;
+}

@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+/* html {
+  background-color: black;
+} */
+nav.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2% 6.2%;
+  justify-content: space-between;
+}
+
+.center {
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+}
+.center ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.center ul li a {
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: black;
+  margin: 10px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.center ul li a::after {
+  content: "";
+  display: block;
+  width: 25%;
+  transition: all ease 0.5s;
+  height: 1px;
+  margin: 1px 0;
+  border-radius: 3rem;
+  background-color: black;
+}
+.center ul li a:hover::after {
+  width: 50%;
+}
+.center ul {
+  list-style: none;
+}
+
+h1.car {
+  font-family: Poppins;
+  font-size: 50px;
+}
+button.Reachout {
+  padding: 1.5% 3%;
+  font-size: 20px;
+  border-radius: 5rem;
+  border: 1px solid black;
+  background: transparent;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+button.Reachout:hover {
+  background-color: black;
+  color: white;
+}
+.home img {
+  width: 100%;
+  top: 20%;
+  left: 2.5%;
+  position: absolute;
+}
+h1.text {
+  font-family: "Poppins";
+  line-height: 100%;
+  letter-spacing: -4px;
+  font-size: 300px;
+  margin: 6%;
+}
+div#home {
+  overflow-x: hidden;
+  position: relative;
+  height: 100vh;
+}
+.conten p {
+  width: 24%;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: Poppins;
+  margin: 0 6.5%;
+  color: black;
+  letter-spacing: 0px;
+  line-height: 126%;
+}
+h1.text {
+  font-family: "Poppins";
+  line-height: 75%;
+  letter-spacing: -4px;
+  font-size: 138px;
+  margin: 6%;
+  margin-bottom: 1%;
+}
+/* .home{
+  position: relative;
+  height: fill;
+  background-image: url(./size.jpg);
+} */
+footer.footer {
+  background: black;
+  color: white;
+  width: 100%;
+}
+.conten {
+  margin-bottom: 20%;
+}
+.blkstrp1,
+.blkstrp2,
+.blkstrp {
+  width: 20%;
+  height: 5%;
+  background: rgba(0, 0, 0, 0.756);
+  display: block;
+  position: ABSOLUTE;
+  right: 0;
+  top: 30%;
+}
+.blkstrp1 {
+  right: 0%;
+  top: 35.5%;
+  width: 17%;
+  height: 4%;
+}
+
+.blkstrp2 {
+  right: 0;
+  top: 40%;
+  width: 13%;
+  height: 3%;
+}
+
+.text span {
+  color: rgba(0, 0, 0, 0.756);
+  font-size: 125px;
+}
+h1.logo {
+  font-size: 50px;
+  margin-bottom: 1%;
+  font-family: Montserrat;
+}
+
+footer.footer {
+  position: relative;
+  padding: 4% 6%;
+}
+
+.r {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+p.cf1 {
+  width: 50%;
+  font-size: 15px;
+  font-family: Montserrat;
+  line-height: 120%;
+  margin: 2px;
+}
+
+.cf2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.cf2 ul li a {
+  font-size: 20px;
+  font-family: Montserrat;
+  color: grey;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+ul.ul1,
+ul.ul2 {
+  list-style: none;
+}
+
+.cf2 li {
+  margin: 0.2em 1.75em;
+}
+p.copy {
+  position: absolute;
+  bottom: 0;
+}
+
+p.copy {
+  text-align: center;
+  width: 88%;
+  font-family: Montserrat;
+  font-weight: 100;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav.nav {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .center ul {
+    font-size: 65%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h1.text {
+    font-size: 50px;
+    line-height: 100%;
+    margin-top: 50%;
+  }
+
+  h1.text span {
+    font-size: 70px;
+  }
+
+  .conten p {
+    width: 79%;
+  }
+
+  .blkstrp,
+  .blkstrp1,
+  .blkstrp2 {
+    display: none;
+  }
+
+  button.Reachout {
+    position: absolute;
+    right: 10%;
+    font-size: 15px;
+    top: 2.5%;
+    padding: 4% 5%;
+  }
+  .r {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  p.cf1 {
+    width: 85%;
+    margin: 15%;
+  }
+
+  .cf2 {
+    margin-bottom: 20%;
+  }
+}
+.h {
+  z-index: 0;
+  width: 100%;
+  top: 20%;
+  left: 2.5%;
+  position: absolute;
+}
+.conten h1 , .conten p{
+  z-index: 2;
+  position: relative;
+}
